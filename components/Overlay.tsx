@@ -92,7 +92,7 @@ export default function Overlay({ heroRef }: OverlayProps) {
           transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
         >
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/60 md:text-sm">
-            Scroll Down
+            Always Up
           </p>
           <svg
             viewBox="0 0 24 24"
@@ -104,7 +104,7 @@ export default function Overlay({ heroRef }: OverlayProps) {
             className="h-5 w-5 text-[#acec00]"
             aria-hidden
           >
-            <path d="M12 5v14M6 13l6 6 6-6" />
+            <path d="M12 19V5M6 11l6-6 6 6" />
           </svg>
         </motion.div>
       </motion.div>
