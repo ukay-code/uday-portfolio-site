@@ -21,7 +21,7 @@ const SERVICES: Service[] = [
     index: "01",
     title: "UI/UX Design",
     description:
-      "Revenue-driving design that businesses need. Beyond pixels, built on UX thinking.",
+      "Design that moves business metrics. Beyond pixels, built on UX thinking.",
     background: "#151515",
   },
   {
