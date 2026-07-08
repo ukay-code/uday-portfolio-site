@@ -76,14 +76,17 @@ export default function Overlay({ heroRef }: OverlayProps) {
         <h1
           style={{
             fontSize: "clamp(5rem, 15vw, 14rem)",
-            fontWeight: 900,
-            letterSpacing: "-0.03em",
-            color: "rgba(255, 255, 255, 0.10)",
-            textAlign: "center",
+            fontWeight: 800,
+            letterSpacing: "0.01em",
             lineHeight: 1,
+            textAlign: "center",
+            // Hollow, outlined wordmark instead of a flat watermark fill
+            color: "transparent",
+            WebkitTextStroke: "1.5px rgba(255, 255, 255, 0.45)",
           }}
         >
           UK
+          <span style={{ WebkitTextStroke: "0px", color: "#acec00" }}>.</span>
         </h1>
         {/* Scroll cue: the hero is scroll-driven, so invite the first scroll */}
         <motion.div
