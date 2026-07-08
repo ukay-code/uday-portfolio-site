@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+const aileron = localFont({
+  src: [
+    { path: "./fonts/aileron-300.woff2", weight: "300", style: "normal" },
+    { path: "./fonts/aileron-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/aileron-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/aileron-700.woff2", weight: "700", style: "normal" },
+    // Aileron's heaviest cut; also serves the site's 900-weight usages.
+    { path: "./fonts/aileron-800.woff2", weight: "800 900", style: "normal" },
+  ],
   display: "swap",
 });
 
@@ -38,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" style={{ backgroundColor: "#0d0d0d" }}>
-      <body className={poppins.className}>{children}</body>
+      <body className={aileron.className}>{children}</body>
     </html>
   );
 }
